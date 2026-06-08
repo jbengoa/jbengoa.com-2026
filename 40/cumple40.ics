@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//jbengoa.com//Cumple40//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cumple40-juan-20260521@jbengoa.com
+DTSTAMP:20260414T000000Z
+DTSTART;TZID=America/Santo_Domingo:20260521T200000
+DTEND;TZID=America/Santo_Domingo:20260522T010000
+SUMMARY:Cumpleaños 40 de Juan Bengoa
+DESCRIPTION:Celebración de cumpleaños 40 de Juan. Ubicación: https://maps.app.goo.gl/gnutf47RMUutFqZU9
+LOCATION:O'dile — Tequila y Mezcal Club, Santo Domingo (https://maps.app.goo.gl/gnutf47RMUutFqZU9)
+END:VEVENT
+END:VCALENDAR

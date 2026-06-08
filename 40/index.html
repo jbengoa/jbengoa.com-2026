@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Confirma tu asistencia al cumpleaños 40 de Juan Bengoa. Jueves 21 de mayo de 2026, 8:00 PM."><meta name="robots" content="noindex, nofollow"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet"><title>40 — Juan Bengoa · RSVP</title><style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .p40 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .p40 a {
+        color: var(--p40-gold-light);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .p40 a:hover {
+        color: #fff;
+      }
+      .p40 a:focus-visible {
+        outline: 2px solid var(--p40-gold);
+        outline-offset: 2px;
+      }
+      .p40 {
+        --p40-gold: #c9a227;
+        --p40-gold-light: #e8d48b;
+        --p40-gold-dark: #8a6b1a;
+        --p40-bg: #000000;
+        --p40-surface: #0a0a0c;
+        --p40-border: rgba(201, 162, 39, 0.35);
+        margin: 0;
+        min-height: 100vh;
+        color: #f5f0e6;
+        background: var(--p40-bg);
+        font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      .p40__bokeh {
+        pointer-events: none;
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 80% 50% at 50% 40%, rgba(201, 162, 39, 0.12) 0%, transparent 55%),
+          radial-gradient(circle at 20% 70%, rgba(201, 162, 39, 0.08) 0%, transparent 25%),
+          radial-gradient(circle at 80% 30%, rgba(232, 212, 139, 0.06) 0%, transparent 22%),
+          radial-gradient(circle at 50% 85%, rgba(138, 107, 26, 0.1) 0%, transparent 30%);
+        z-index: 0;
+      }
+
+      .p40__hero {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: clamp(2.5rem, 8vw, 4.5rem) 1.25rem 2rem;
+      }
+
+      .p40__eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--p40-gold-light);
+        margin: 0 0 0.5rem;
+        opacity: 0.9;
+      }
+
+      .p40__num {
+        margin: 0;
+        font-size: clamp(5rem, 22vw, 9rem);
+        line-height: 0.95;
+        font-weight: 700;
+        background: linear-gradient(
+          160deg,
+          #fff8e0 0%,
+          var(--p40-gold-light) 25%,
+          var(--p40-gold) 45%,
+          var(--p40-gold-dark) 65%,
+          var(--p40-gold) 85%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 60px rgba(201, 162, 39, 0.35);
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+      }
+
+      .p40__name {
+        font-family: 'Great Vibes', cursive;
+        font-weight: 400;
+        font-size: clamp(2.5rem, 9vw, 4rem);
+        line-height: 1.1;
+        margin: 0.25rem 0 1rem;
+        color: var(--p40-gold-light);
+        text-shadow: 0 0 40px rgba(201, 162, 39, 0.25);
+      }
+
+      .p40__when,
+      .p40__time {
+        margin: 0.15rem 0;
+        font-size: clamp(1rem, 2.5vw, 1.15rem);
+        letter-spacing: 0.06em;
+        color: #e8dcc8;
+      }
+
+      .p40__hero-venue {
+        margin: 1.25rem 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .p40__quick-actions {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.2rem;
+        width: fit-content;
+        max-width: 100%;
+        margin-inline: auto;
+      }
+
+      .p40__action-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        text-align: center;
+        padding: 0.1rem 0.15rem;
+        color: #d6c9a6;
+        font-size: 0.64rem;
+        font-family: 'Cinzel', serif;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+
+      .p40__action-btn:hover {
+        color: #fff;
+      }
+
+      .p40__action-icon {
+        width: 1.45rem;
+        height: 1.45rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #e8d48b;
+        transition: transform 0.15s ease, filter 0.15s ease;
+      }
+
+      .p40__action-icon svg {
+        width: 100%;
+        height: 100%;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .p40__action-btn:hover .p40__action-icon {
+        transform: translateY(-1px) scale(1.04);
+        filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.35));
+      }
+
+      .p40__action-label {
+        display: block;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 360px) {
+        .p40__quick-actions {
+          gap: 0.85rem;
+        }
+
+        .p40__action-btn {
+          font-size: 0.58rem;
+          letter-spacing: 0.06em;
+        }
+
+        .p40__action-icon {
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
+
+      .p40__hero-odile {
+        display: block;
+        width: clamp(5.5rem, 22vw, 7.5rem);
+        max-width: 120px;
+        height: auto;
+        margin-inline: auto;
+        filter: drop-shadow(0 2px 14px rgba(0, 0, 0, 0.5));
+      }
+
+      .p40__main {
+        position: relative;
+        z-index: 1;
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 0 1.25rem 3rem;
+      }
+
+      .p40__card {
+        background: var(--p40-surface);
+        border: 1px solid var(--p40-border);
+        border-radius: 14px;
+        padding: 1.5rem 1.35rem 1.75rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      }
+
+      .p40__card--accent {
+        border-color: rgba(201, 162, 39, 0.5);
+        background: linear-gradient(165deg, #12100a 0%, var(--p40-surface) 100%);
+      }
+
+      .p40__card h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 0.75rem;
+        color: var(--p40-gold-light);
+        letter-spacing: 0.04em;
+      }
+
+      .p40__lead {
+        margin: 0 0 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        color: #c4b8a8;
+        font-family: Georgia, 'Times New Roman', serif;
+      }
+
+      .p40__hp {
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+
+      .p40__form {
+        position: relative;
+      }
+
+      .p40__field {
+        margin-bottom: 1rem;
+      }
+
+      .p40__field label {
+        display: block;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--p40-gold);
+        margin-bottom: 0.4rem;
+      }
+
+      .p40__req {
+        color: #f0a8a8;
+      }
+
+      .p40__field input,
+      .p40__field select,
+      .p40__field textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.65rem 0.75rem;
+        font-size: 1rem;
+        font-family: Georgia, serif;
+        color: #f5f0e6;
+        background: #050508;
+        border: 1px solid var(--p40-border);
+        border-radius: 8px;
+      }
+
+      .p40__field input:focus-visible,
+      .p40__field select:focus-visible,
+      .p40__field textarea:focus-visible {
+        outline: 2px solid var(--p40-gold);
+        outline-offset: 2px;
+      }
+
+      .p40__form-status {
+        min-height: 1.5em;
+        font-size: 0.9rem;
+        margin: 0.5rem 0 0.75rem;
+        font-family: Georgia, serif;
+      }
+
+      .p40__form-status--ok {
+        color: #9dcda3;
+      }
+
+      .p40__form-status--err {
+        color: #f0a8a8;
+      }
+
+      .p40__submit {
+        width: 100%;
+        padding: 0.85rem 1.25rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-family: 'Cinzel', serif;
+        color: #0a0804;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: linear-gradient(180deg, var(--p40-gold-light) 0%, var(--p40-gold) 45%, var(--p40-gold-dark) 100%);
+        box-shadow: 0 4px 20px rgba(201, 162, 39, 0.35);
+        transition: transform 0.15s ease, filter 0.15s ease;
+      }
+
+      .p40__submit:hover:not(:disabled) {
+        filter: brightness(1.08);
+        transform: translateY(-1px);
+      }
+
+      .p40__wa {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.65rem 0.85rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.9rem 1rem;
+        margin-top: 0.25rem;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: #e8f8ec;
+        text-decoration: none;
+        border-radius: 12px;
+        border: 1px solid rgba(37, 211, 102, 0.45);
+        background: linear-gradient(180deg, rgba(37, 211, 102, 0.12) 0%, rgba(10, 40, 22, 0.85) 100%);
+        transition: filter 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      }
+
+      .p40__wa:hover {
+        filter: brightness(1.08);
+        border-color: rgba(37, 211, 102, 0.75);
+        color: #fff;
+      }
+
+      .p40__wa:focus-visible {
+        outline: 2px solid #25d366;
+        outline-offset: 3px;
+      }
+
+      .p40__wa-icon {
+        display: flex;
+        flex-shrink: 0;
+      }
+
+      .p40__wa-icon svg {
+        display: block;
+      }
+
+      .p40__wa-num {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .p40__back {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .p40__back a {
+        color: var(--p40-gold-light);
+        font-size: 0.9rem;
+        letter-spacing: 0.06em;
+      }
+
+      .p40__back a:hover {
+        color: #fff;
+      }
+    </style><script type="module">(function(){var n=document.getElementById("rsvp-form"),e=document.getElementById("form-status");if(!(!n||!e)){var s=n.getAttribute("data-endpoint")||"/40/rsvp.php";n.addEventListener("submit",function(a){a.preventDefault(),e.textContent="Enviando…",e.className="p40__form-status";var i=new FormData(n),o={};i.forEach(function(t,r){o[r]=String(t)}),fetch(s,{method:"POST",mode:"same-origin",headers:{"Content-Type":"application/json;charset=UTF-8"},body:JSON.stringify(o)}).then(function(t){return t.text().then(function(r){try{return JSON.parse(r)}catch{throw new Error("Respuesta inválida del servidor")}})}).then(function(t){if(t&&t.ok)e.textContent="¡Listo! Gracias por confirmar.",e.className="p40__form-status p40__form-status--ok",n.reset();else throw new Error(t&&t.message||"No se pudo guardar")}).catch(function(t){e.textContent="No se pudo enviar. Revisa la conexión o inténtalo más tarde. ("+(t&&t.message?t.message:"error")+")",e.className="p40__form-status p40__form-status--err"})})}})();
+</script></head> <body class="p40"> <div class="p40__bokeh" aria-hidden="true"></div> <header class="p40__hero"> <p class="p40__eyebrow">Celebración</p> <p class="p40__num" aria-hidden="true">40</p> <h1 class="p40__name">Juan Bengoa</h1> <p class="p40__when">Jueves 21 de mayo de 2026</p> <p class="p40__time">8:00 PM</p> <div class="p40__hero-venue"> <img class="p40__hero-odile" src="/40/odile-logo-white.png" alt="O'dile — Tequila y Mezcal Club" width="451" height="480" loading="eager" decoding="async"> </div> <div class="p40__quick-actions" aria-label="Acciones rápidas del evento"> <a class="p40__action-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumplea%C3%B1os%2040%20de%20Juan%20Bengoa&dates=20260521T200000/20260522T010000&ctz=America%2FSanto_Domingo&details=Celebraci%C3%B3n%20de%20cumplea%C3%B1os%2040%20de%20Juan.%20Ubicaci%C3%B3n%3A%20https%3A%2F%2Fmaps.app.goo.gl%2Fgnutf47RMUutFqZU9&location=O'dile%20%E2%80%94%20Tequila%20y%20Mezcal%20Club%2C%20Santo%20Domingo%20(https%3A%2F%2Fmaps.app.goo.gl%2Fgnutf47RMUutFqZU9)" target="_blank" rel="noopener noreferrer" aria-label="Agregar a Google Calendar"> <span class="p40__action-icon" aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"> <rect x="3.5" y="5.5" width="17" height="15" rx="2.5"></rect> <path d="M7.5 3.5v4M16.5 3.5v4M3.5 10h17"></path> </svg> </span> <span class="p40__action-label">Google</span> </a> <a class="p40__action-btn" href="/40/cumple40.ics" download aria-label="Descargar evento para Apple Calendar o Outlook"> <span class="p40__action-icon" aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"> <path d="M12 4v10"></path> <path d="M8.5 10.5L12 14l3.5-3.5"></path> <path d="M4.5 18.5h15"></path> </svg> </span> <span class="p40__action-label">Apple/Outlook</span> </a> <a class="p40__action-btn" href="https://maps.app.goo.gl/gnutf47RMUutFqZU9" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación en Google Maps"> <span class="p40__action-icon" aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"> <path d="M12 20s6-5.1 6-10a6 6 0 10-12 0c0 4.9 6 10 6 10z"></path> <circle cx="12" cy="10" r="2.2"></circle> </svg> </span> <span class="p40__action-label">Ubicación</span> </a> </div> </header> <main class="p40__main"> <section class="p40__card" aria-labelledby="rsvp-heading"> <h2 id="rsvp-heading">Confirmar asistencia</h2> <form class="p40__form" id="rsvp-form" data-endpoint="/40/rsvp.php"> <div class="p40__field"> <label for="name">Nombre y apellido <span class="p40__req">*</span></label> <input id="name" name="name" type="text" autocomplete="name" required maxlength="120"> </div> <div class="p40__field"> <label for="email">Correo (opcional)</label> <input id="email" name="email" type="email" autocomplete="email" maxlength="120"> </div> <div class="p40__field"> <label for="phone">Teléfono / WhatsApp (opcional)</label> <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40"> </div> <div class="p40__field"> <label for="guests">¿Cuántas personas en total (tú incluido)?</label> <select id="guests" name="guests"> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6 o más (indica en mensaje)</option> </select> </div> <div class="p40__field"> <label for="message">Mensaje (opcional)</label> <textarea id="message" name="message" rows="3" maxlength="500"></textarea> </div> <div class="p40__hp" aria-hidden="true"> <label for="website">No rellenar</label> <input id="website" name="website" type="text" tabindex="-1" autocomplete="off"> </div> <input type="hidden" name="source" value="jbengoa.com/40"> <p class="p40__form-status" id="form-status" role="status" aria-live="polite"></p> <button type="submit" class="p40__submit">Enviar confirmación</button> </form> </section> <section class="p40__card p40__card--accent" aria-labelledby="mesa-heading"> <h2 id="mesa-heading">Reserva tu mesa en O'dile</h2> <p class="p40__lead">
+La mesa la coordinas directo con el personal de reservas de O'dette / O'dile, indicando
+          que es para mi cumpleaños.
+</p> <a class="p40__wa" href="https://wa.me/18292138796" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp reservas O'dile, 1 (829) 213-8796"> <span class="p40__wa-icon" aria-hidden="true"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" role="img"> <path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.113 1.036 6.978 2.918a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path> </svg> </span> <span class="p40__wa-num">1 (829) 213-8796</span> </a> </section> <p class="p40__back"> <a href="/">← jbengoa.com</a> </p> </main>  </body> </html>

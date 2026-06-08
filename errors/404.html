@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>404 — jbengoa.com</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050508;
+      --surface: #16161f;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #0099cc;
+      --accent-hover: #00d1e6;
+      --border: #1e293b;
+      --danger: #de2142;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 28rem;
+      text-align: center;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 1.125rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+      transition: color 0.2s ease;
+    }
+    .brand:hover { color: var(--accent-hover); }
+    .brand img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: block;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      border-top: 3px solid var(--accent);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    }
+    .code {
+      font-size: clamp(3.5rem, 12vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1;
+      margin: 0 0 0.35rem;
+      color: var(--accent);
+      letter-spacing: -0.04em;
+    }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+    }
+    p {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: 0.9375rem;
+      line-height: 1.55;
+    }
+    .en { font-size: 0.8125rem; opacity: 0.9; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.35rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      font-family: inherit;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn:focus-visible {
+      outline: 2px solid var(--accent-hover);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/favicon.svg" width="40" height="40" alt="" />
+      jbengoa.com
+    </a>
+    <div class="card">
+      <p class="code" aria-hidden="true">404</p>
+      <h1>Página no encontrada</h1>
+      <p>La dirección no existe o fue movida. Revisa la URL o vuelve al inicio.</p>
+      <p class="en">Page not found. Check the URL or return home.</p>
+      <a class="btn" href="/">Volver al inicio / Home</a>
+    </div>
+  </div>
+</body>
+</html>
